@@ -1,0 +1,18 @@
+<project name="chrome-speedpad" basedir="D:\dev_projects\chrome-speedpad"
+         default="buildDebug">
+
+  <target name="buildDebug">
+    <exec executable="cmd">
+      <arg value="/c" />
+      <arg value="D:\sdk\dart\bin\pub.bat" />
+      <arg value="build" />
+      <arg value="--mode=debug" />
+
+    </exec>
+  </target>
+
+  <!--TODO: create Build config for packaging the build output to web store developer conform zip file
+  https://developer.chrome.com/extensions/packaging#upload-->
+
+
+</project>

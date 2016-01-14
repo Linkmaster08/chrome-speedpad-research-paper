@@ -1,0 +1,23 @@
+<style>
+
+  .GenericPanel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    z-index: 100;
+
+    width: 0;
+
+    overflow: hidden;
+    background: rgba(10, 10, 10, 0.9);
+  }
+
+</style>
+
+<section class="GenericPanel">
+  <settings-panel ng-if="currentPanel == isSettingsPanel"></settings-panel>
+  <new-link-panel ng-if="currentPanel == isNewLinkPanel"></new-link-panel>
+
+</section>

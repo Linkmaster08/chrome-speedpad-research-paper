@@ -1,0 +1,27 @@
+<style>
+  .settings-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px 10px;
+
+    height: 100px;
+    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+
+    text-align: center;
+  }
+
+  .gear-icon {
+    background-image: url("packages/speedpad/settings_button/gear.png");
+    width: 70px;
+    height: 70px;
+  }
+</style>
+
+<button class="glass-box glass-button settings-button" ng-click="openSettings($event)">
+  <!--<span class="font-icon">&#x2699</span>-->
+  <span class="image-icon gear-icon "></span>
+  Einstellungen
+</button>

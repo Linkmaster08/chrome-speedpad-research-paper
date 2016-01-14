@@ -1,0 +1,27 @@
+<project name="speedpad-service" basedir="D:\dev_projects\chrome-speedpad\speedpad-service"
+         default="buildDebug">
+
+  <target name="buildDebug">
+    <exec executable="cmd">
+      <arg value="/c" />
+      <arg value="pub" />
+      <arg value="build" />
+      <arg value="--mode=debug" />
+
+    </exec>
+  </target>
+
+  <target name="runSpeedpadServiceTests">
+    <exec executable="cmd">
+      <arg value="/c"/>
+      <arg value="pub"/>
+      <arg value="run"/>
+      <arg value="test"/>
+    </exec>
+  </target>
+
+
+  <!-- TODO: create Build config for packaging the build output to web store developer conform zip file
+  https://developer.chrome.com/extensions/packaging#upload-->
+
+</project>

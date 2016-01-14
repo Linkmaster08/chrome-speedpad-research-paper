@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3JkNiY1ZqjPHw5cgL9/OqXbsxRo/h/i3XkYNBkpvHNfdvzleowBK30tuTYgGvYx6IEUgrgeTBYf4JgO0TsRbHs+0CrQ5el9+kt2LJSfaFaB73MLpxwzMXSoYh00HyK02kJrOePW2MVewzIcP7jyllWDch6jLYYFwxoqk4OikvDxR48Orn7Osdr1E+M2Xb9qN+ObMB+fK+T7tNEgFH4nKbrJZBz4mbXew2lPvlviLaXOf6q2ZwSGlzuUo3l3FtkZzw3dkwMwnuN5QlOMIss8Z05tjaUOD1BH+tVbab+k0mhF7ECEOhoqd1j3yASMgGMrthaGrJBJwso4gLhNMn8MMbwIDAQAB",
+  "minimum_chrome_version": "23",
+
+  "name": "Chrome Speedpad Service",
+  "description": "A Service-Helper App for the Chrome Speedpad Extension.",
+  "version": "0.0.1.0",
+
+  "app": {
+    "background": {
+      "scripts": ["background.dart.js"]
+    }
+  },
+
+  "icons": { "16": "css/icons/service_icon_16.png", "128": "css/icons/service_icon_128.png" },
+
+  "permissions": [
+    "syncFileSystem",
+    "fileSystem",
+    "storage",
+    "unlimitedStorage"
+  ]
+}

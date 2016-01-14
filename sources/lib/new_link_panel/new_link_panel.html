@@ -1,0 +1,55 @@
+<style>
+
+  .NewLinkPanel {
+    width: 400px;
+    height: 100%;
+    padding: 15px;
+  }
+
+  .NewLinkPanel label {
+    color: white;
+  }
+
+  .NewLinkPanel input {
+    min-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .NewLinkPanel button {
+    width: 48%;
+    margin: 0;
+  }
+
+</style>
+
+<section class="NewLinkPanel">
+  <h1 class="panel">Neue Seite</h1>
+
+  <!-- default width and height: 300 x 200-->
+  <image-component src="imgBuffer" allowImport></image-component>
+
+  <table style="width: 100%;">
+    <tr>
+      <td><label for="name">Name</label></td>
+      <td>
+        <input class="bnware-smooth" id="name" type="text" ng-model="nameBuffer" placeholder="Name eingeben"> <br/>
+        <span class="attention" ng-if="missingName">Bitte geben sie einen Namen ein!</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="url" style="margin-right: 10px">Ziel</label>
+      </td>
+      <td>
+        <input class="bnware-smooth" id="url" type="text" ng-model="urlBuffer" placeholder="URL eingeben">
+        <span class="attention" ng-if="missingUrl">Bitte geben sie ein Ziel ein!</span>
+      </td>
+    </tr>
+  </table>
+
+  <div style="width: 100%; position: relative; margin-top: 15px;">
+    <button class="bnware-smooth" style="position: absolute; right: 0" ng-click="save()">Speichern</button>
+    <button class="bnware-smooth" style="position: absolute; left: 0" ng-click="cancel()">Abbrechen</button>
+  </div>
+
+</section>

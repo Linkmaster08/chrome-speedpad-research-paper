@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/lib/generic_panel/generic_panel.dart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/generic_panel/generic_panel.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/new_link_panel/new_link_panel.dart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/new_link_panel/new_link_panel.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/settings_button/settings_button.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/settings_panel/settings_panel.dart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/settings_panel/settings_panel.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lib/speedpad_app.dart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pubspec.yaml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/manifest.json" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

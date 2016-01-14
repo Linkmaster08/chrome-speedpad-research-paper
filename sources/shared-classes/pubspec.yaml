@@ -1,0 +1,21 @@
+name: shared_classes
+description: A starting point for Dart libraries or applications.
+version: 0.0.1
+author: Benjamin Jesuiter <bjesuiter@gmail.com>
+#homepage: https://www.example.com
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+
+dependencies:
+  crypto: "^0.9.1"
+  serialization: "^0.10.4+2"
+  logging: "^0.11.2"
+  logging_handlers: "^0.8.0"
+
+#transformers:
+#   - serialization:
+#     $include: ["lib/src/command_carrier.dart", "lib/src/link_entry.dart"]
+
+dev_dependencies:
+  test: "^0.12.6"

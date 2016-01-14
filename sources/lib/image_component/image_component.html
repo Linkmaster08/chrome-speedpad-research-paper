@@ -1,0 +1,73 @@
+<style>
+  .ImagePreviewContainer {
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .dragHint {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    color: white;
+  }
+
+  .dragHint-hover {
+    border: 2px solid #CCCCCC;
+  }
+
+  .no-image-placeholder {
+    color: rgba(100, 100, 100, 0.5);
+
+    text-shadow:
+      /*links-mitte*/
+    -1px  0   1px #373737,
+      /*links-oben*/
+    -1px -1px 1px #373737,
+      /*mitte-oben*/
+    0   -1px 1px #373737,
+      /*rechts-oben*/
+    1px -1px 1px #373737,
+      /*rechts-mitte*/
+    1px  0   1px #373737,
+      /*rechts-unten*/
+    1px  1px 1px #373737,
+      /*mitte-unten*/
+    0    1px 1px #373737,
+      /*links-unten*/
+    -1px  1px 1px #373737;
+  }
+
+  .big-font {
+    font-size: 45pt;
+    text-align: center;
+    padding-top: 22pt;
+  }
+
+  #preview {
+    max-width: 100%;
+    max-height: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>
+
+<div class="ImagePreviewContainer">
+  <div class="no-image-placeholder big-font"
+       style="display: inline-block; width: 100%"
+       ng-hide="showDragHint || imgAvaliable()">
+    Bild auswählen
+  </div>
+
+  <img src="" ng-src="{{dataSourceArgument}}" id="preview" ng-hide="showDragHint || !imgAvaliable()">
+
+  <div class="dragHint big-font" ng-show="showDragHint">
+    Bild hier ablegen
+  </div>
+
+</div>

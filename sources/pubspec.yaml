@@ -1,0 +1,31 @@
+name: speedpad
+version: 0.0.4
+description: A speed dial launchpad for chrome
+dependencies:
+  browser: any
+  chrome: "^0.7.0-dev1"
+  angular: "1.1.2+2"
+  web_components: "^0.12.0+2"
+  dart_to_js_script_rewriter: "^0.1.0+3"
+  event_bus: "^0.4.1"
+  animation: "^0.5.24"
+  image: "^1.1.24"
+  observe: "^0.13.1+2"
+  serialization: "^0.10.4+2"
+  logging: "^0.11.2"
+  logging_handlers: "^0.8.0"
+  shared_classes:
+    path: "shared-classes"
+
+dev_dependencies:
+#  test: "^0.12.6"
+
+transformers:
+- angular:
+    dart_sdk: "D:/sdk/dart"
+- $dart2js:
+    minify: false
+    csp: true
+    sourceMaps: true
+- chrome
+- dart_to_js_script_rewriter

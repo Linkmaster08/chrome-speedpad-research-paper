@@ -1,0 +1,115 @@
+/**
+ * Generic Layout Definitions
+ * =================================================
+ */
+
+/* <editor-fold desc="Generic Layout Definitions"> */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.font-icon {
+  font-size: 45pt;
+  margin: 0 auto;
+  display: block
+}
+
+.image-icon {
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+  display: block
+}
+
+.ng-hide {
+  display: none!important;
+}
+
+/* </editor-fold> */
+
+/**
+ * Glass design
+ * =================================================
+ */
+
+.glass-box {
+  padding: 10px 0;
+  border: 1px solid;
+  border-color: #CCCCCC;
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.glass-button {
+  height: 80px;
+  width: 80px;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.glass-button:focus {
+  /*outline: 2px solid rgba(255, 255, 255, 0.9);*/
+  outline: none;
+}
+
+.glass-button:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+.glass-button:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/**
+ * Main Layout Definitions
+ * =================================================
+ */
+
+@media screen {
+
+  body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  /*blurry background*/
+  section.container:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    /*margin: -30px -30px 0 -30px;*/
+    margin: -30px;
+    display: block;
+    background: url(img/bg.jpg) center;
+    background-size: cover;
+    /*-webkit-filter: saturate(1.3) blur(10px);*/
+    -webkit-filter: blur(10px);
+  }
+
+  section.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  h1.panel {
+    margin: 0 0 15px 0;
+    color: white;
+    font-size: 46pt;
+    text-align: center;
+  }
+
+  .attention {
+    color: red;
+  }
+
+}

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt4uTjBtWZKaaRz7MXpq9rqGiIEN1NUZcthpyGpYfosLqMGxlQ06WXbOCkNBsEzk5999PM9hUPsxpH4j61+SoNl/C2jFN21uNXvHY3dQ31XiTtbAnmRnYg/ADhmBVFP/YvwPt8EIi5ThwQp5/5pICqHbIyRR/ILXuXGcAGDTxzZ9/k/Kw1MT2dpuXzXDYgsfXGk/9vsO/VuP3MGbkIqGxOLgNxz5HGygyHFGUVCS+7BkcRxt6iawGf8izeNNPs5fp+QTz+MJvfeK/Ye4xZydoAYUNB4sJSns19nYk2cxCNCZPmic05SzROD2+01avZYsPLRrEw4HsBU3tQ3ZTUi7UgwIDAQAB",
+  "minimum_chrome_version": "23",
+
+  "name": "Chrome Speedpad",
+  "description": "A speed dial Add-On like Launchpad on Mac OSX",
+  "version": "0.0.1.1",
+
+  "chrome_url_overrides" : {
+    "newtab": "launchpad.html"
+  },
+
+  "permissions": [
+    "storage",
+    "<all_urls>"
+  ]
+}
+
